@@ -22,6 +22,6 @@ $partite = [
 
 foreach ($partite as $partita) {
     foreach ($partita as $key => $value) {
-echo $value ;
-}
+        echo $value;
+    }
 } ?>
