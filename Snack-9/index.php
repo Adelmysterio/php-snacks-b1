@@ -4,8 +4,9 @@ Cerchiamo di usare il piu' possibile getter e setter per accedere e modificare i
 <?php 
 require_once __DIR__ . '/Classes/User.php';
 require_once __DIR__ . '/Classes/PremiumUser.php';
+require_once __DIR__ . '/Classes/Membership.php';
 
-$adelmo = new PremiumUser('email.email.com', 'password1234', 'Premium');
+$adelmo = new PremiumUser('email.email.com', 'password1234',new Membership('Premium'));
 
 var_dump($adelmo)
 ?>
